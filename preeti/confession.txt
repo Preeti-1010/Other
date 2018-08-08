@@ -1,0 +1,21 @@
+Hello ,
+This is preeti here ,
+afere a long time i had not talked to myself , so here  am i, its very pleasure that i had a conversation  with you ohh its me.. 
+so , its have been one year almost and i am now graduated, simple as usual and preeety me, 
+so there is nothing special just everything changed , people, things, environment , and way of thinking , relataionships etc..
+
+so , I was saying that please be independent and normal and find a way of solution in your own.
+
+so , its been a 1 yr and i m working as php developer,.. in this field i worked on core, frameworks, and cms too, and i had changed u cant believe this that i changed 4 companies and i m working in my 5th company its just passed around 2 n 1/2 month..in noida sector 3.
+During this i had gone many new places alone. like New Delhi, Gaziabad, Gurgaoun, Noida living currently..
+
+and love life life is also going on well.. tring to handle and happy with every way.
+just a advice that dnt be addicted of anyone or anything.. because it hurts when you expect from others and it doesnt completed.
+
+just months passed and then year and bla...
+
+
+//
+echo "<pre>";print_r($print_result);
+
+//

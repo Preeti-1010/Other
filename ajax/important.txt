@@ -1,0 +1,51 @@
+
+HRM LOGIN--
+hrm.qtriangle.in
+preeti
+preeti@123
+
+Timesheet Login--
+Preeti Pandey 	
+preeti@123
+
+gmail : preeti@qtriangle.in
+pass: qtpreeti
+
+skype: preeti@qtriangle.in
+pass: gmail pass
+
+
+
+(Projects login)--
+
+dlm website--
+admin: dlm
+pass: dev4dlm
+
+//Upwork timer//
+
+Sir:
+rohit_ve11
+Archit9811
+
+devansh:
+user : devansh_123
+pass : Dev8765544698*
+
+mohit:
+mohit@freebirdinfo.in	
+Archit9811
+
+client
+client4dlm
+
+//test mail n name for live sites//
+test@dlmconversion.com
+testdlm
+
+ font-family: berkeley oldstyle,serif;
+
+// Worked on--
+
+ Reflection, Sprout, Seattle etc..(Wordpress)
+ Central Services Officers Board (Codeigniter)

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#demo").hide(3000);
+      });
+      $("#show").click(function(){
+        $("#demo").show();
+      });
+      $("button").dblclick(function(){
+        $("#demo").show();
+      });
+      
+      $("#mousentr").mouseenter(function(){
+        alert('You enter mouse. thankyou!');
+      });
+      $("#m1").mouseleave(function(){
+        alert("Bbyee!!");
+      });
+
+      $("#do").mousedown(function(){
+        alert("you scroll down");
+      });
+      $("#up").on({
+
+        mouseup: function(){
+           alert("you scroll up");
+        },
+        hover: function(){
+        alert("u just hover me :-)");
+      }
+
+      });
+
+      $('input').focus(function(){
+          $(this).css("background",'Red');
+      });
+
+      $("#me").click(function(){
+
+        $("#fade").fadeIn();
+        $("#fade2").fadeIn("slow");
+        $("#fade3").fadeIn(3000);
+      });
+
+      $("#fdbtn").click(function(){
+        $("#fd1").fadeOut();
+        $("#fd2").fadeOut("slow");
+        $("#fd3").fadeOut(3000);
+
+      });
+
+      $("#btntgto").click(function(){
+          $("#t1").fadeToogle();
+          $("#t2").fadeToggle("slow");
+          $("#t3").fadeToggle(3000);
+      });
+
+      $("#fadeto").click(function(){
+
+          $("#to1").fadeTo("slow", 0.15);
+      });
+
+      $("#flip").click(function(){
+
+          $("#panel").slideDown();
+      });
+
+      $("#flip1").click(function(){
+
+          $("#panel2").slideUp();
+      });
+      $("#flip2").click(function(){
+
+          $("#panel3").slideToggle();
+      });
+
+      $("#a1btn").click(function(){
+          $("#a1").animate({
+            left:'125px'
+          });
+      });
+      $("#a2btn").click(function(){
+          $("#a2").animate({
+              left: '125px',
+              height: '+=150px',
+              width: '+=150px'
+          });
+      });
+
+      $("#a3btn").click(function(){
+          $("#a3").animate({
+            left: '125px',
+            height:'toggle'
+          });
+      });
+
+    $("#a4btn").click(function(){
+          var anim = $("#a4");
+          anim.animate({left:'120px'}, "slow");
+          anim.animate({fontSize:'3em'}, "slow");
+
+          });
+
+    $("#stop").click(function(){
+          $("#pan").stop();
+    });
+
+
+    $("#flp").click(function(){
+          $("#pan").slideDown(3000).animate({left: '125px'});
+    });
+
+    $('#chain').click(function(){
+        $("#p1").css("color","red").animate({left: '125px'}).slideUp(2000).slideDown(2000);
+    });
+
+    $("#btn1").click(function(){
+       alert("Text: " + $("#test").text());
+    });
+
+    $("#btn2").click(function(){
+
+        alert("HTML TEXT: " + $("#test").html());
+    });
+
+    $("#v").click(function(){
+      alert("Value Text:" + $("#tvalue").val());
+    });
+
+    $("#h").click(function(){
+      alert("Href text:" + $("#w3s").attr("href"));
+    });
+
+    $("#bt").click(function(){
+       $("#padd").append("<b>New Appended Text</b>");
+    });
+
+    $("#bt1").click(function(){
+        $("#apol").append("<li>New List Appended</li>");
+    });
+
+    $("#btpre").click(function(){
+      $("#pre").prepend("<b>Hey its new</b>");
+    });
+
+    $("#bt1pre").click(function(){
+      $("#preol").prepend("<li>Hey me new too..</li>");
+    });
+
+    $("#fwd").click(function(){
+      $("img").before("<b>Hey I am forward</b>");
+    });
+
+    $("#bck").click(function(){
+      $("img").after("<b>Hey I am backward</b>");
+    });
+    $("#empty").click(function(){
+      $("#empdiv").empty();
+    });
+
+      $("#remove").click(function(){
+      $("#empdiv").remove();
+    });
+      });
+
+</script>
+<style>
+
+  #flip,#panel,#flip1,#panel2.#flip2,#panel3{
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+
+  #pan, #flp {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    left: 125px;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+#pan{
+    padding: 50px;
+    display: none;
+}
+
+</style>
+</head>
+<body>
+
+<h1>DEMO</h1>
+<h3>1. Show & Hide</h3>
+<div id="demo">ok Google</div> 
+<button type="button" id="">Change Content</button>
+<button type="button" id="show">Show Content</button>
+
+<h3>2. Scrolling</h3>
+
+<div id="do">scroll down </div>
+<div id="up">scroll up</div>
+
+<h3> 3. Css</h3>
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+<br>
+
+<h3>4. Fading</h3>
+<button type="button" id="me">Click Me</button>
+<p id="fade" style="display: none;">Fashion Fade Me</p>
+<div id="fade2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="fade3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+<h3>5. Fade Out</h3>
+
+<button type="button" id="fdbtn">Click Me</button>
+<p id="fd1" >Fashion Fade Out</p>
+<div id="fd2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="fd3" style="width:80px;height:80px;background-color:blue;"></div>
+
+<h3>6. Fade Toogle</h3>
+<button id= "btntgto">Click ME...</button><br><br>
+
+<div id="t1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="t2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="t3" style="width:80px;height:80px;background-color:blue;"></div>
+
+<h3>7. Fade To</h3>
+<button id= "fadeto">Click it</button><br><br>
+<div id="to1" style="width:80px;height:80px;background-color:red;"></div>
+
+<h3>8. Sliding Down</h3>
+<div id="flip">Click to slide down panel</div>
+<div id="panel" style=" display: none; padding: 50px;">Hello world!</div>
+
+<h3>9. Sliding Up</h3>
+<div id="flip1">Click to slide up panel</div>
+<div id="panel2" style="padding: 50px;">Hello world!</div>
+
+<h3>10. Sliding Toggle</h3>
+<div id="flip2">Click to slide up panel</div>
+<div id="panel3" style="padding: 50px;">Hello world!</div>
+
+<center><h3>11. Animation</h3>
+<button id= "a1btn">Animating</button>
+<div id= "a1" style="background:#000;height:100px;width:100px;position:absolute;"></div></center>
+
+<h3>12. Mouse Leave & Enter</h3>
+<div id="mousentr">HI..here it is!!</div>
+<div id="m1">You leave..</div>
+
+<center><h3>13. Position Animation</h3>
+<button id="a2btn">+</button>
+<div id="a2" style="background:green;height:100px;width:100px;position:absolute;"></div></center>
+
+<h3>14. Toogle Animation</h3>
+<button id="a3btn">Toggle</button>
+<div id="a3" style="background:yellow;height:100px;width:100px;position:absolute;"></div>
+
+<center><h3>15. Multiple queue</h3>
+<button id="a4btn">Click it</button>
+<div id="a4" style="background:pink;height:100px;width:100px;position:absolute;">Hello</div></center>
+
+<h3>16.Stop </h3>
+<button id="stop">Stop me if u can..</button>
+<div id="flp" style="background:red;height:100px;width:100px;position:absolute;">Click to slide down</div>
+<div id="pan" style="background:blue;height:100px;width:100px;position:absolute;"></div>
+
+<center><h3>17. Chaining</h3>
+<p id="p1">jQuery is fun!!</p>
+<button id="chain">Click me</button></center>
+
+<h3>18. Get Values:text(), html(), value(), href().</h3>
+<p id="test"><b> Text </b> in paragraph.</p>
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+<br><br>
+<button id="v">Show Value</button>
+<p>Name: <input type="text" id="tvalue" value="Mickey Mouse"></p>
+<br><br>
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+<button id="h">Show href Value</button>
+
+<h3>19. Add Values: append(), Prepend(), After(), before().</h3>
+
+<p id="padd">This is a paragraph.</p>
+<ol id="#apol">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<button id="bt">Append text</button>
+<button id="bt1">Append list items</button>
+
+<br>
+<p id="pre">This is a paragraph.</p>
+<ol id="preol">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<button id="btpre">Prepend text</button>
+<button id="bt1pre">Prepend list items</button>
+<br>
+<button id="fwd">Click </button>
+<button id="bck">Again Click</button>
+
+<img src="winter.jpg" height="100px" width="100px" >
+<br><br>
+
+<button id="empty">Empty Me</button>
+<div id="empdiv" style="height:100px;width:300px;border:1px solid black;background-color:pink;">
+<p>Hi</p>
+<p>Hello</p>
+<p>Bye</p>
+</div>
+
+<br>
+<button id="remove">Remove Me</button>
+
+</body>
+</html>
